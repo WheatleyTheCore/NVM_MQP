@@ -1,0 +1,6 @@
+[submodule "sandbox/assets/room-impulse-responses"]
+	path = sandbox/assets/room-impulse-responses
+	url = https://github.com/RoyJames/room-impulse-responses.git
+[submodule "sandbox/assets/pianoNotes"]
+	path = sandbox/assets/pianoNotes
+	url = https://github.com/parisjava/wav-piano-sound.git
