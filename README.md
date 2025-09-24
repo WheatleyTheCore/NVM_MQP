@@ -10,3 +10,9 @@ care if things potentially affect system packages.
 Then install the libraries with `pip3 install -r requirements.txt`.
 
 Then, run the get_irs_for_ex script in the sandbox directory to install the IRs I used. 
+
+
+#### Getting Started with Daisy Seed 
+1. Set up toolchain and stuff on your system (https://daisy.audio/tutorials/cpp-dev-env/#steps)
+   1. you don't need the vscode extension
+2. use command palette to build and flash (with dfu) over usb

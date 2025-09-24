@@ -4,3 +4,6 @@
 [submodule "sandbox/assets/pianoNotes"]
 	path = sandbox/assets/pianoNotes
 	url = https://github.com/parisjava/wav-piano-sound.git
+[submodule "Daisy_Examples"]
+	path = Daisy_Examples
+	url = https://github.com/electro-smith/DaisyExamples
