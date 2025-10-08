@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "daisy_seed")(type "KiCad")(uri "${KIPRJMOD}/daisy_seed.kicad_sym")(options "")(descr ""))
+  (lib (name "piezo")(type "KiCad")(uri "${KIPRJMOD}/piezo.kicad_sym")(options "")(descr ""))
+)
