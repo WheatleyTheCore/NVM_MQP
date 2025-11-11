@@ -1,0 +1,15 @@
+LTspice 24.1.10 for Windows
+Circuit: Z:\home\violet\projects\wpi\NVM-MQP\spice\simple_op_amp.net
+Start Time: Tue Nov 11 11:31:32 2025
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.208 seconds.
+
+Files loaded:
+Z:\home\violet\projects\wpi\NVM-MQP\spice\simple_op_amp.net
+C:\users\violet\AppData\Local\LTspice\lib\sub\OP482.lib
+
