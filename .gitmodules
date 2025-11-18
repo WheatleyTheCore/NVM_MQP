@@ -7,3 +7,6 @@
 [submodule "Daisy_Examples"]
 	path = Daisy_Examples
 	url = https://github.com/electro-smith/DaisyExamples
+# [submodule "daisy_firmware/ulibSD"]
+# 	path = daisy_firmware/ulibSD
+# 	url = git@github.com:WheatleyTheCore/Daisy_Seedified_ulibSD.git
