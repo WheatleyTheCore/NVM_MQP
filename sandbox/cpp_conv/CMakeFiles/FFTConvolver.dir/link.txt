@@ -1,0 +1,2 @@
+/usr/bin/ar qc libFFTConvolver.a CMakeFiles/FFTConvolver.dir/external_libs/FFTConvolver/FFTConvolver.cpp.o CMakeFiles/FFTConvolver.dir/external_libs/FFTConvolver/AudioFFT.cpp.o CMakeFiles/FFTConvolver.dir/external_libs/FFTConvolver/TwoStageFFTConvolver.cpp.o CMakeFiles/FFTConvolver.dir/external_libs/FFTConvolver/Utilities.cpp.o
+/usr/bin/ranlib libFFTConvolver.a
