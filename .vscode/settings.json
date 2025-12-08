@@ -1,4 +1,7 @@
 {
     "idf.pythonInstallPath": "C:\\Users\\pengu\\.espressif\\tools\\idf-python\\3.11.2\\python.exe",
-    "C_Cpp.default.compilerPath": "/usr/bin/arm-none-eabi-gcc"
+    "C_Cpp.default.compilerPath": "/usr/bin/arm-none-eabi-gcc",
+    "files.associations": {
+        "daisy_seed.h": "c"
+    }
 }

@@ -18,17 +18,21 @@ int main(void)
     // components before initialization.
     hardware.Configure();
     hardware.Init();
+    hardware.StartLog();
 
-    // Loop forever
-    for(;;)
-    {
-        // Set the onboard LED
-        hardware.SetLed(led_state);
+    // And Print Hello World!
+    hardware.PrintLine("Hello World!");
 
-        // Toggle the LED state for the next time around.
-        led_state = !led_state;
+        // Loop forever
+        for (;;)
+        {
+            // Set the onboard LED
+            hardware.SetLed(led_state);
 
-        // Wait 500ms
-        System::Delay(50);
-    }
+            // Toggle the LED state for the next time around.
+            led_state = !led_state;
+
+            // Wait 500ms
+            System::Delay(5);
+        }
 }

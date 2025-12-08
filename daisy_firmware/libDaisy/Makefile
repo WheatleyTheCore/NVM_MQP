@@ -225,6 +225,10 @@ CPP_SOURCES += $(addsuffix .cpp, $(addprefix $(MODULE_DIR)/, $(CPP_MODULES)))
 C_SOURCES += $(addsuffix .c, $(addprefix $(MODULE_DIR)/, $(C_MODULES)))
 C_SOURCES += core/startup_stm32h750xx.c
 
+C_SOURCES +=  ../ulibSD/sd_io.c ../ulibSD/std_io.c
+
+
+
 #STARTUP_PATH = Drivers/CMSIS/Device/ST/STM32H7xx/Source/Templates/gcc
 # ASM sources
 #ASM_SOURCES =  \
@@ -303,6 +307,7 @@ C_INCLUDES = \
 -IMiddlewares/ST/STM32_USB_Host_Library/Core/Inc \
 -IMiddlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc \
 -IMiddlewares/Third_Party/FatFs/src \
+-I../ulibSD \ # ADDED
 -I$(MODULE_DIR) \
 -I.
 
