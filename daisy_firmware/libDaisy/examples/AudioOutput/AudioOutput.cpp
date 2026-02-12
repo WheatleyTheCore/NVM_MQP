@@ -31,7 +31,7 @@ void AudioCallback(AudioHandle::InputBuffer  in,
          * This is a very basic sine-wave oscillator with a fixed increment to generate
          * a 220Hz waveform at 48kHz samplerate
          */
-        float signal = sin(phs) * 0.5f;
+        float signal = sin(phs) * 1.0f;
         phs += kSignalIncrement;
         if(phs > M_TWOPI)
             phs -= M_TWOPI;

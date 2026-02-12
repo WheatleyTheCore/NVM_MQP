@@ -116,6 +116,7 @@ C_DEFS +=  \
 -DARM_MATH_CM7 \
 -DUSE_FULL_LL_DRIVER
 
+
 # for debugging bootloaded applications
 ifdef DEBUG
 C_DEFS += -DDEBUG
@@ -132,13 +133,14 @@ C_INCLUDES += \
 -I$(LIBDAISY_DIR)/src/sys \
 -I$(LIBDAISY_DIR)/src/usbd \
 -I$(LIBDAISY_DIR)/src/usbh \
--I$(LIBDAISY_DIR)/Drivers/CMSIS/Include/ \
--I$(LIBDAISY_DIR)/Drivers/CMSIS/DSP/Include \
--I$(LIBDAISY_DIR)/Drivers/CMSIS/Device/ST/STM32H7xx/Include \
+-I$(LIBDAISY_DIR)/Drivers/CMSIS_5/CMSIS/Core/Include/ \
+-I$(LIBDAISY_DIR)/Drivers/CMSIS-DSP/Include \
+-I$(LIBDAISY_DIR)/Drivers/CMSIS-Device/ST/STM32H7xx/Include \
 -I$(LIBDAISY_DIR)/Drivers/STM32H7xx_HAL_Driver/Inc/ \
 -I$(LIBDAISY_DIR)/Middlewares/ST/STM32_USB_Device_Library/Core/Inc \
 -I$(LIBDAISY_DIR)/Middlewares/ST/STM32_USB_Host_Library/Core/Inc \
 -I$(LIBDAISY_DIR)/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc \
+-I$(LIBDAISY_DIR)/Middlewares/ST/STM32_USB_Host_Library/Class/MIDI/Inc \
 -I$(SYSTEM_FILES_DIR)/
 
 ifdef DAISYSP_DIR
@@ -169,6 +171,9 @@ ifeq ($(USE_FATFS),1)
 C_SOURCES += $(FATFS_SOURCES)
 endif
 C_INCLUDES += -I$(FATFS_DIR)
+
+# File I/O Abstract Interface for FatFS:
+C_DEFS += -DFILEIO_ENABLE_FATFS_READER
 
 # compile gcc flags
 ASFLAGS = $(MCU) $(AS_DEFS) $(AS_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
@@ -212,7 +217,7 @@ QSPI_ADDRESS ?= 0x90040000
 DAISY_PID = df11
 STM_PID = df11
 
-BOOT_BIN ?= $(SYSTEM_FILES_DIR)/dsy_bootloader_v6_2-intdfu-2000ms.bin
+BOOT_BIN ?= $(SYSTEM_FILES_DIR)/dsy_bootloader_v6_3-intdfu-2000ms.bin
 APP_TYPE ?= BOOT_NONE
 
 ifeq ($(APP_TYPE), BOOT_NONE)

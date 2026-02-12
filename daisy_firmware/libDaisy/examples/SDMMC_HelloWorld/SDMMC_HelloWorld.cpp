@@ -30,7 +30,8 @@ int main(void)
      *  Medium (25MHz), 4-bit, w/out power save settings
      */
     SdmmcHandler::Config sd_cfg;
-    sd_cfg.speed = SdmmcHandler::Speed::STANDARD;
+    sd_cfg.width = SdmmcHandler::BusWidth::BITS_1;
+    sd_cfg.speed = SdmmcHandler::Speed::SLOW;
     sdmmc.Init(sd_cfg);
 
     /** Setup our interface to the FatFS middleware */
@@ -61,6 +62,8 @@ int main(void)
         }
     }
 
+    hw.StartLog(true);
+    hw.PrintLine("%d", res);
 
     /** Infinite Loop */
     while(1)
@@ -75,5 +78,7 @@ int main(void)
         hw.SetLed(true);
         System::Delay(blink_rate);
         hw.SetLed(false);
+
+        
     }
 }

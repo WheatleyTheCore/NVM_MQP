@@ -67,18 +67,25 @@ void HAL_SD_MspInit(SD_HandleTypeDef* sdHandle)
             case 1: gpioSpeed = GPIO_SPEED_FREQ_VERY_HIGH; break; // VERY_FAST
         }
 
-        GPIO_InitStruct.Pin = GPIO_PIN_12 | GPIO_PIN_8;
+        GPIO_InitStruct.Pin = GPIO_PIN_8; // EDIT: maybe 12 should be non-pull up (moved low)?
         if(sdHandle->Init.BusWide == SDMMC_BUS_WIDE_4B)
             GPIO_InitStruct.Pin |= GPIO_PIN_9 | GPIO_PIN_10 | GPIO_PIN_11;
         GPIO_InitStruct.Mode      = GPIO_MODE_AF_PP;
-        GPIO_InitStruct.Pull      = GPIO_NOPULL;
+        GPIO_InitStruct.Pull      = GPIO_PULLUP; // EDIT: updated to not require external pullups?
         GPIO_InitStruct.Speed     = gpioSpeed;
         GPIO_InitStruct.Alternate = GPIO_AF12_SDIO1;
         HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
+        GPIO_InitStruct.Pin =  GPIO_PIN_12; // EDIT: maybe 12 should be non-pull up?
+        GPIO_InitStruct.Pull      = GPIO_PULLUP; // EDIT: updated to not require external pullups?
+        GPIO_InitStruct.Speed     = gpioSpeed;
+        GPIO_InitStruct.Alternate = GPIO_AF12_SDIO1;
+        HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+
         GPIO_InitStruct.Pin       = GPIO_PIN_2;
         GPIO_InitStruct.Mode      = GPIO_MODE_AF_PP;
-        GPIO_InitStruct.Pull      = GPIO_NOPULL;
+        GPIO_InitStruct.Pull      = GPIO_PULLUP; // EDIT: updated to not require external pullups?
         GPIO_InitStruct.Speed     = gpioSpeed;
         GPIO_InitStruct.Alternate = GPIO_AF12_SDIO1;
         HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
