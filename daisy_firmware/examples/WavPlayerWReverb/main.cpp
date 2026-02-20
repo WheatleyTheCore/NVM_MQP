@@ -86,7 +86,7 @@ int main(void)
     hw.PrintLine("\tChannels:\t%d", info.numChannels);
     hw.PrintLine("\tBit Depth:\t%d", info.bitsPerSample);
 
-    
+     
 
     
 
