@@ -12,11 +12,17 @@
  *  The included file was created with sox, using the following command:
  *  sox -n -r 48000 -b 16 -c 2 loop.wav synth 1 sine 440 gain -6
  */
+#include <vector>
+
 #include "daisy_seed.h"
 
 #include "FFTConvolver/FFTConvolver.h"
 #include "FFTConvolver/TwoStageFFTConvolver.h"
 #include "FFTConvolver/Utilities.h"
+
+#include <cmath>
+#include <cstdio>
+#include <cstdlib>
 
 using namespace daisy;
 
@@ -29,18 +35,76 @@ static WavPlayer<kTransferSize> player;
 static WavPlayer<kTransferSize> ir_player;
 static FIL                      file;
 
+uint32_t num_ir_samples;
+// int16_t ir_samples[900000000]; // this is a bad hack
+std::vector<fftconvolver::Sample> ir;
+
+
+template<typename T>
+void SimpleConvolve(const T* input, size_t inLen, const T* ir, size_t irLen, T* output)
+{
+  if (irLen > inLen)
+  {
+    SimpleConvolve(ir, irLen, input, inLen, output);
+    return;
+  }
+  
+  ::memset(output, 0, (inLen+irLen-1) * sizeof(T));
+  
+  for (size_t n=0; n<irLen; ++n)
+  {
+    for (size_t m=0; m<=n; ++m)
+    {
+      output[n] += ir[m] * input[n-m];
+    }
+  }
+  
+  for (size_t n=irLen; n<inLen; ++n)
+  {
+    for (size_t m=0; m<irLen; ++m)
+    {
+      output[n] += ir[m] * input[n-m];
+    }
+  }
+  
+  for (size_t n=inLen; n<inLen+irLen-1; ++n)
+  {
+    for (size_t m=n-inLen+1; m<irLen; ++m)
+    {
+      output[n] += ir[m] * input[n-m];
+    }
+  }
+}
+
+
 void AudioCallback(AudioHandle::InputBuffer  in,
                    AudioHandle::OutputBuffer out,
                    size_t                    size)
 {
+    float outL[size];
+    float outR[size];
+    std::vector<fftconvolver::Sample> signal(size);
+
+
     for(size_t i = 0; i < size; i++)
     {
         // Fill two channels of data per sample
         float samps[2];
         player.Stream(samps, 2);
-        out[0][i] = samps[0];
-        out[1][i] = samps[1];
+
+
+        signal[i] = samps[1];
+
+
     }
+
+    SimpleConvolve(&signal[0], signal.size(), &ir[0], ir.size(), &outL[0]);
+
+    for (size_t i = 0; i < size; i++) {
+      OUT_L[0] = signal[i];
+      OUT_R[1] = signal[i];
+    }
+        
 }
 
 int main(void)
@@ -96,13 +160,17 @@ int main(void)
     }
 
     // note: this should *really* load into RAM via DSY_SDRAM_BSS
-    const uint32_t ir_num_samples = ir_player.GetDurationInSamples();
-    int16_t ir_samples[ir_num_samples];
+    num_ir_samples = ir_player.GetDurationInSamples();
+    int16_t ir_samples[num_ir_samples];
 
 
     if (f_open(&file, "ir.wav", FA_READ) == FR_OK) {
         UINT bytes_read = 0;
-        f_read(&file, ir_samples,  ir_num_samples * sizeof(ir_samples[0]), &bytes_read);
+        f_read(&file, ir_samples,  ir.size(), &bytes_read);
+    }
+
+    for (uint8_t i = 0; i < num_ir_samples; i++) {
+      ir.push_back(ir_samples[i]);
     }
 
     hw.PrintLine("IR Loaded");

@@ -5,8 +5,10 @@ import torch
 # Load the impulse response and normalise
 rir, rir_sample_rate = torchaudio.load('assets/room-impulse-responses/irs/MIT_Survey/h047_Hallway_MIT_4txts.wav')
 
+# the raw signal to apply the IR to
 note, note_sample_rate = torchaudio.load('assets/pianoNotes/wav/e1.wav') # this is the incorrect note name.....
 
+# check sample rates are okay (essentially that they were recorded at the same freq. this is only important bc we are working with wav files)
 if note_sample_rate != rir_sample_rate:
     resampler = torchaudio.transforms.Resample(orig_freq=rir_sample_rate, new_freq=note_sample_rate)
     rir = resampler(rir)
@@ -18,4 +20,5 @@ rir = rir / torch.linalg.vector_norm(rir, ord=2)
 # Convolve note with room impulse response
 note_with_reverb = F.fftconvolve(note, rir)
 
+# save as wav file to listen to
 torchaudio.save('assets/note_with_reverb.wav', note_with_reverb, note_sample_rate)
