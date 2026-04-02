@@ -41,25 +41,25 @@ H = trombone_fft / guitar_fft
 
 ir = ifft(H).real[:number_samples]
 
-trombone_lick = signal.convolve(shortened_guitar, ir)
+trombone_lick = signal.convolve(shortened_guitar, ir)[:len(shortened_guitar)]
 
 print('convolution done')
 
-# fig, (ax_orig, ax_win, ax_filt, ax_rec) = plt.subplots(4, 1, sharex=True)
-# ax_orig.plot(shortened_trombone)
-# ax_orig.set_title('trombone')
-# ax_orig.margins(0, 0.1)
-# ax_win.plot(shortened_guitar)
-# ax_win.set_title('guitar')
-# ax_win.margins(0, 0.1)
-# ax_filt.plot(ir)
-# ax_filt.set_title('IR')
-# ax_filt.margins(0, 0.1)
-# ax_rec.plot(trombone_lick)
-# ax_rec.set_title('trombone lick')
-# ax_rec.margins(0, 0.1)
-# fig.tight_layout()
-# fig.show()
+fig, (ax_orig, ax_win, ax_filt, ax_rec) = plt.subplots(4, 1, sharex=True)
+ax_orig.plot(shortened_trombone)
+ax_orig.set_title('trombone')
+ax_orig.margins(0, 0.1)
+ax_win.plot(shortened_guitar)
+ax_win.set_title('guitar')
+ax_win.margins(0, 0.1)
+ax_filt.plot(ir)
+ax_filt.set_title('IR')
+ax_filt.margins(0, 0.1)
+ax_rec.plot(trombone_lick)
+ax_rec.set_title('modeled trombone output')
+ax_rec.margins(0, 0.1)
+fig.tight_layout()
+fig.savefig('figure.png')
 
 wavfile.write('trombonelick.wav', 44100, trombone_lick)
 
