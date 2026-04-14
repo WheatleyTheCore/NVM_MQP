@@ -1,0 +1,1250 @@
+{
+    "Bird_Aspen_DH37": {
+        "3s_excitation": {
+            "rpms": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/3s_excitation/piezo_loud_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/3s_excitation/mic_loud_ring_rpms.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/3s_excitation/piezo_med_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/3s_excitation/mic_med_ring_rpms.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/3s_excitation/piezo_soft_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/3s_excitation/mic_soft_ring_rpms.wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/3s_excitation/piezo_loud_no_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/3s_excitation/mic_loud_no_ring_rpms.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/3s_excitation/piezo_med_no_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/3s_excitation/mic_med_no_ring_rpms.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/3s_excitation/piezo_soft_no_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/3s_excitation/mic_soft_no_ring_rpms.wav"
+                    }
+                }
+            },
+            "sweep": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/3s_excitation/piezo_loud_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/3s_excitation/mic_loud_ring_sweep.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/3s_excitation/piezo_med_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/3s_excitation/mic_med_ring_sweep.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/3s_excitation/piezo_soft_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/3s_excitation/mic_soft_ring_sweep.wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/3s_excitation/piezo_loud_no_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/3s_excitation/mic_loud_no_ring_sweep.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/3s_excitation/piezo_med_no_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/3s_excitation/mic_med_no_ring_sweep.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/3s_excitation/piezo_soft_no_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/3s_excitation/mic_soft_no_ring_sweep.wav"
+                    }
+                }
+            }
+        },
+        "5s_excitation": {
+            "rpms": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/5s_excitation/piezo_loud_ring_rpms(2).wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/5s_excitation/mic_loud_ring_rpms(2).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/5s_excitation/piezo_med_ring_rpms(2).wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/5s_excitation/mic_med_ring_rpms(2).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/5s_excitation/piezo_soft_ring_rpms(2).wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/5s_excitation/mic_soft_ring_rpms(2).wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/5s_excitation/piezo_loud_no_ring_rpms(2).wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/5s_excitation/mic_loud_no_ring_rpms(2).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/5s_excitation/piezo_med_no_ring_rpms(2).wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/5s_excitation/mic_med_no_ring_rpms(2).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/5s_excitation/piezo_soft_no_ring_rpms(2).wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/5s_excitation/mic_soft_no_ring_rpms(3).wav"
+                    }
+                }
+            },
+            "sweep": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/5s_excitation/piezo_loud_ring_sweep(3).wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/5s_excitation/mic_loud_ring_sweep(2).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/5s_excitation/piezo_med_ring_sweep(2).wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/5s_excitation/mic_med_ring_sweep(2).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/5s_excitation/piezo_soft_ring_sweep(2).wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/5s_excitation/mic_soft_ring_sweep(2).wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/5s_excitation/piezo_loud_no_ring_sweep(2).wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/5s_excitation/mic_loud_no_ring_sweep(2).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/5s_excitation/piezo_med_no_ring_sweep(2).wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/5s_excitation/mic_med_no_ring_sweep(2).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/5s_excitation/piezo_soft_no_ring_sweep(2).wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/5s_excitation/mic_soft_no_ring_sweep(2).wav"
+                    }
+                }
+            }
+        },
+        "10s_excitation": {
+            "rpms": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/10s_excitation/piezo_loud_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/10s_excitation/mic_loud_ring_rpms.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/10s_excitation/piezo_med_ring_rpms(3).wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/10s_excitation/mic_med_ring_rpms.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/10s_excitation/piezo_soft_ring_rpms(3).wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/10s_excitation/mic_soft_ring_rpms.wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/10s_excitation/piezo_loud_no_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/10s_excitation/mic_loud_no_ring_rpms.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/10s_excitation/piezo_med_no_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/10s_excitation/mic_med_no_ring_rpms.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/10s_excitation/piezo_soft_no_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/10s_excitation/mic_soft_no_ring_rpms.wav"
+                    }
+                }
+            },
+            "sweep": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/10s_excitation/piezo_loud_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/10s_excitation/mic_loud_ring_sweep.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/10s_excitation/piezo_med_ring_sweep(3).wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/10s_excitation/mic_med_ring_sweep.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/10s_excitation/piezo_soft_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/10s_excitation/mic_soft_ring_sweep.wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/10s_excitation/piezo_loud_no_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/10s_excitation/mic_loud_no_ring_sweep.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/10s_excitation/piezo_med_no_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/10s_excitation/mic_med_no_ring_sweep.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/10s_excitation/piezo_soft_no_ring_sweep(3).wav",
+                        "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/10s_excitation/mic_soft_no_ring_sweep(3).wav"
+                    }
+                }
+            }
+        },
+        "all_frets_finger": {
+            "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/all_frets_finger_mic.wav",
+            "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/all_frets_finger_piezo(2).wav"
+        },
+        "excerpt": {
+            "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/excerpt_mic.wav",
+            "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/excerpt_piezo.wav"
+        },
+        "open_strings": {
+            "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/open_strings_mic.wav",
+            "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/open_strings_piezo.wav"
+        },
+        "played_chords": {
+            "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/played_chords_mic.wav",
+            "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/played_chords_piezo.wav"
+        },
+        "played_melody": {
+            "mic": "Guitar_Data_REAL/Bird_Aspen_DH37/played_melody_mic.wav",
+            "piezo": "Guitar_Data_REAL/Bird_Aspen_DH37/played_melody_piezo(2).wav"
+        }
+    },
+    "good_takamine_EG523SC": {
+        "3s_excitation": {
+            "rpms": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/3s_excitation/piezo_loud_ring_rpms 4.wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/3s_excitation/mic_loud_ring_rpms 4.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/3s_excitation/piezo_med_ring_rpms 4.wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/3s_excitation/mic_med_ring_rpms 4.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/3s_excitation/piezo_soft_ring_rpms 4.wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/3s_excitation/mic_soft_ring_rpms 4.wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/3s_excitation/piezo_loud_no_ring_rpms 4.wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/3s_excitation/mic_loud_no_ring_rpms 4.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/3s_excitation/piezo_med_no_ring_rpms 4.wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/3s_excitation/mic_med_no_ring_rpms 4.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/3s_excitation/piezo_soft_no_ring_rpms 4.wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/3s_excitation/mic_soft_no_ring_rpms 4.wav"
+                    }
+                }
+            },
+            "sweep": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/3s_excitation/piezo_loud_ring_sweep 4.wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/3s_excitation/mic_loud_ring_sweep 4.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/3s_excitation/piezo_med_ring_sweep 4.wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/3s_excitation/mic_med_ring_sweep 4.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/3s_excitation/piezo_soft_ring_sweep 4.wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/3s_excitation/mic_soft_ring_sweep 4.wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/3s_excitation/piezo_loud_no_ring_sweep 4.wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/3s_excitation/mic_loud_no_ring_sweep 4.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/3s_excitation/piezo_med_no_ring_sweep 4.wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/3s_excitation/mic_med_no_ring_sweep 4.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/3s_excitation/piezo_soft_no_ring_sweep 4.wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/3s_excitation/mic_soft_no_ring_sweep 4.wav"
+                    }
+                }
+            }
+        },
+        "5s_excitation": {
+            "rpms": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/5s_excitation/piezo_loud_ring_rpms 4(2).wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/5s_excitation/mic_loud_ring_rpms 4(2).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/5s_excitation/piezo_med_ring_rpms 4(2).wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/5s_excitation/mic_med_ring_rpms 4(2).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/5s_excitation/piezo_soft_ring_rpms 4(2).wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/5s_excitation/mic_soft_ring_rpms 4(2).wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/5s_excitation/piezo_loud_no_ring_rpms 4(2).wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/5s_excitation/mic_loud_no_ring_rpms 4(2).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/5s_excitation/piezo_med_no_ring_rpms 4(2).wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/5s_excitation/mic_med_no_ring_rpms 4(2).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/5s_excitation/piezo_soft_no_ring_rpms 4(2).wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/5s_excitation/mic_soft_no_ring_rpms 4(2).wav"
+                    }
+                }
+            },
+            "sweep": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/5s_excitation/piezo_loud_ring_sweep 4(2).wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/5s_excitation/mic_loud_ring_sweep 4(2).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/5s_excitation/piezo_med_ring_sweep 4(2).wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/5s_excitation/mic_med_ring_sweep 4(2).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/5s_excitation/piezo_soft_ring_sweep 4(2).wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/5s_excitation/mic_soft_ring_sweep 4(2).wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/5s_excitation/piezo_loud_no_ring_sweep 4(2).wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/5s_excitation/mic_loud_no_ring_sweep 4(2).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/5s_excitation/piezo_med_no_ring_sweep 4(2).wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/5s_excitation/mic_med_no_ring_sweep 4(2).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/5s_excitation/piezo_soft_no_ring_sweep 4(2).wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/5s_excitation/mic_soft_no_ring_sweep 4(2).wav"
+                    }
+                }
+            }
+        },
+        "10s_excitation": {
+            "rpms": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/10s_excitation/piezo_loud_ring_rpms 4(3).wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/10s_excitation/mic_loud_ring_rpms 4(3).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/10s_excitation/piezo_med_ring_rpms 4(3).wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/10s_excitation/mic_med_ring_rpms 4(3).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/10s_excitation/piezo_soft_ring_rpms 4(3).wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/10s_excitation/mic_soft_ring_rpms 4(3).wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/10s_excitation/piezo_loud_no_ring_rpms 4(3).wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/10s_excitation/mic_loud_no_ring_rpms 4(3).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/10s_excitation/piezo_med_no_ring_rpms 4(3).wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/10s_excitation/mic_med_no_ring_rpms 4(3).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/10s_excitation/piezo_soft_no_ring_rpms 4(3).wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/10s_excitation/mic_soft_no_ring_rpms 4(3).wav"
+                    }
+                }
+            },
+            "sweep": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/10s_excitation/piezo_loud_ring_sweep 4(3).wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/10s_excitation/mic_loud_ring_sweep 4(3).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/10s_excitation/piezo_med_ring_sweep 4(3).wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/10s_excitation/mic_med_ring_sweep 4(3).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/10s_excitation/piezo_soft_ring_sweep 4(3).wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/10s_excitation/mic_soft_ring_sweep 4(3).wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/10s_excitation/piezo_loud_no_ring_sweep 4(3).wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/10s_excitation/mic_loud_no_ring_sweep 4(3).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/10s_excitation/piezo_med_no_ring_sweep 4(3).wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/10s_excitation/mic_med_no_ring_sweep 4(3).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/10s_excitation/piezo_soft_no_ring_sweep 4(3).wav",
+                        "mic": "Guitar_Data_REAL/good_takamine_EG523SC/10s_excitation/mic_soft_no_ring_sweep 4(3).wav"
+                    }
+                }
+            }
+        },
+        "all_frets_finger": {
+            "mic": "Guitar_Data_REAL/good_takamine_EG523SC/all_frets_finger_mic 4.wav",
+            "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/all_frets_finger_piezo 4.wav"
+        },
+        "excerpt": {
+            "mic": "Guitar_Data_REAL/good_takamine_EG523SC/excerpt_mic.wav",
+            "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/excerpt_piezo.wav"
+        },
+        "open_strings": {
+            "mic": "Guitar_Data_REAL/good_takamine_EG523SC/open_strings_mic 4.wav",
+            "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/open_strings_piezo 4.wav"
+        },
+        "played_chords": {
+            "mic": "Guitar_Data_REAL/good_takamine_EG523SC/played_chords_mic 4.wav",
+            "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/played_chords_piezo 4.wav"
+        },
+        "played_melody": {
+            "mic": "Guitar_Data_REAL/good_takamine_EG523SC/played_melody_mic 4.wav",
+            "piezo": "Guitar_Data_REAL/good_takamine_EG523SC/played_melody_piezo 4.wav"
+        }
+    },
+    "AJ_JJasmine_JF37CD": {
+        "3s_excitation": {
+            "rpms": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/3s_excitation/piezo_loud_ring_rpms 3.wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/3s_excitation/mic_loud_ring_rpms 3.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/3s_excitation/piezo_med_ring_rpms 3.wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/3s_excitation/mic_med_ring_rpms 3.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/3s_excitation/piezo_soft_ring_rpms 3.wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/3s_excitation/mic_soft_ring_rpms 3.wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/3s_excitation/piezo_loud_no_ring_rpms 3.wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/3s_excitation/mic_loud_no_ring_rpms 3.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/3s_excitation/piezo_med_no_ring_rpms 3.wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/3s_excitation/mic_med_no_ring_rpms 3.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/3s_excitation/piezo_soft_no_ring_rpms 3.wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/3s_excitation/mic_soft_no_ring_rpms 3.wav"
+                    }
+                }
+            },
+            "sweep": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/3s_excitation/piezo_loud_ring_sweep 3.wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/3s_excitation/mic_loud_ring_sweep 3.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/3s_excitation/piezo_med_ring_sweep 3.wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/3s_excitation/mic_med_ring_sweep 3.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/3s_excitation/piezo_soft_ring_sweep 3.wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/3s_excitation/mic_soft_ring_sweep 3.wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/3s_excitation/piezo_loud_no_ring_sweep 3.wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/3s_excitation/mic_loud_no_ring_sweep 3.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/3s_excitation/piezo_med_no_ring_sweep 3.wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/3s_excitation/mic_med_no_ring_sweep 3.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/3s_excitation/piezo_soft_no_ring_sweep 3.wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/3s_excitation/mic_soft_no_ring_sweep 3.wav"
+                    }
+                }
+            }
+        },
+        "5s_excitation": {
+            "rpms": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/5s_excitation/piezo_loud_ring_rpms 3(2).wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/5s_excitation/mic_loud_ring_rpms 3(2).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/5s_excitation/piezo_med_ring_rpms 3(2).wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/5s_excitation/mic_med_ring_rpms 3(2).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/5s_excitation/piezo_soft_ring_rpms 3(2).wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/5s_excitation/mic_soft_ring_rpms 3(2).wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/5s_excitation/piezo_loud_no_ring_rpms 3(2).wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/5s_excitation/mic_loud_no_ring_rpms 3(2).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/5s_excitation/piezo_med_no_ring_rpms 3(2).wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/5s_excitation/mic_med_no_ring_rpms 3(2).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/5s_excitation/piezo_soft_no_ring_rpms 3(2).wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/5s_excitation/mic_soft_no_ring_rpms 3(2).wav"
+                    }
+                }
+            },
+            "sweep": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/5s_excitation/piezo_loud_ring_sweep 3(2).wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/5s_excitation/mic_loud_ring_sweep 3(2).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/5s_excitation/piezo_med_ring_sweep 3(2).wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/5s_excitation/mic_med_ring_sweep 3(2).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/5s_excitation/piezo_soft_ring_sweep 3(2).wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/5s_excitation/mic_soft_ring_sweep 3(2).wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/5s_excitation/piezo_loud_no_ring_sweep 3(2).wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/5s_excitation/mic_loud_no_ring_sweep 3(2).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/5s_excitation/piezo_med_no_ring_sweep 3(2).wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/5s_excitation/mic_med_no_ring_sweep 3(2).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/5s_excitation/piezo_soft_no_ring_sweep 3(2).wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/5s_excitation/mic_soft_no_ring_sweep 3(2).wav"
+                    }
+                }
+            }
+        },
+        "10s_excitation": {
+            "rpms": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/10s_excitation/piezo_loud_ring_rpms 3(3).wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/10s_excitation/mic_loud_ring_rpms 3(3).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/10s_excitation/piezo_med_ring_rpms 3(3).wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/10s_excitation/mic_med_ring_rpms 3(3).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/10s_excitation/piezo_soft_ring_rpms 3(3).wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/10s_excitation/mic_soft_ring_rpms 3(3).wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/10s_excitation/piezo_loud_no_ring_rpms 3(3).wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/10s_excitation/mic_loud_no_ring_rpms 3(3).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/10s_excitation/piezo_med_no_ring_rpms 3(3).wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/10s_excitation/mic_med_no_ring_rpms 3(3).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/10s_excitation/piezo_soft_no_ring_rpms 3(3).wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/10s_excitation/mic_soft_no_ring_rpms 3(3).wav"
+                    }
+                }
+            },
+            "sweep": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/10s_excitation/piezo_loud_ring_sweep 3(3).wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/10s_excitation/mic_loud_ring_sweep 3(3).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/10s_excitation/piezo_med_ring_sweep 3(3).wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/10s_excitation/mic_med_ring_sweep 3(3).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/10s_excitation/piezo_soft_ring_sweep 3(3).wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/10s_excitation/mic_soft_ring_sweep 3(3).wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/10s_excitation/piezo_loud_no_ring_sweep 3(3).wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/10s_excitation/mic_loud_no_ring_sweep 3(3).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/10s_excitation/piezo_med_no_ring_sweep 3(3).wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/10s_excitation/mic_med_no_ring_sweep 3(3).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/10s_excitation/piezo_soft_no_ring_sweep 3(3).wav",
+                        "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/10s_excitation/mic_soft_no_ring_sweep 3(3).wav"
+                    }
+                }
+            }
+        },
+        "all_frets_finger": {
+            "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/all_frets_finger_mic 3.wav",
+            "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/all_frets_finger_piezo 3.wav"
+        },
+        "excerpt": {
+            "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/excerpt_mic.wav",
+            "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/excerpt_piezo.wav"
+        },
+        "open_strings": {
+            "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/open_strings_mic 3.wav",
+            "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/open_strings_piezo 3.wav"
+        },
+        "played_chords": {
+            "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/played_chords_mic 3.wav",
+            "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/played_chords_piezo 3.wav"
+        },
+        "played_melody": {
+            "mic": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/played_melody_mic 3.wav",
+            "piezo": "Guitar_Data_REAL/AJ_JJasmine_JF37CD/played_melody_piezo 3.wav"
+        }
+    },
+    "Classical_Unknown": {
+        "3s_excitation": {
+            "rpms": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/3s_excitation/piezo_loud_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/3s_excitation/mic_loud_ring_rpms.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/3s_excitation/piezo_med_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/3s_excitation/mic_med_ring_rpms.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/3s_excitation/piezo_soft_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/3s_excitation/mic_soft_ring_rpms.wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/3s_excitation/piezo_loud_no_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/3s_excitation/mic_loud_no_ring_rpms.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/3s_excitation/piezo_med_no_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/3s_excitation/mic_med_no_ring_rpms.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/3s_excitation/piezo_soft_no_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/3s_excitation/mic_soft_no_ring_rpms.wav"
+                    }
+                }
+            },
+            "sweep": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/3s_excitation/piezo_loud_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/3s_excitation/mic_loud_ring_sweep.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/3s_excitation/piezo_med_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/3s_excitation/mic_med_ring_sweep.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/3s_excitation/piezo_soft_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/3s_excitation/mic_soft_ring_sweep.wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/3s_excitation/piezo_loud_no_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/3s_excitation/mic_loud_no_ring_sweep.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/3s_excitation/piezo_med_no_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/3s_excitation/mic_med_no_ring_sweep.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/3s_excitation/piezo_soft_no_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/3s_excitation/mic_soft_no_ring_sweep.wav"
+                    }
+                }
+            }
+        },
+        "5s_excitation": {
+            "rpms": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/5s_excitation/piezo_loud_ring_rpms(2).wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/5s_excitation/mic_loud_ring_rpms(2).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/5s_excitation/piezo_med_ring_rpms(2).wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/5s_excitation/mic_med_ring_rpms(2).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/5s_excitation/piezo_soft_ring_rpms(2).wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/5s_excitation/mic_soft_ring_rpms(2).wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/5s_excitation/piezo_loud_no_ring_rpms(2).wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/5s_excitation/mic_loud_no_ring_rpms(2).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/5s_excitation/piezo_med_no_ring_rpms(2).wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/5s_excitation/mic_med_no_ring_rpms(2).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/5s_excitation/piezo_soft_no_ring_rpms(2).wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/5s_excitation/mic_soft_no_ring_rpms(2).wav"
+                    }
+                }
+            },
+            "sweep": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/5s_excitation/piezo_loud_ring_sweep(2).wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/5s_excitation/mic_loud_ring_sweep(2).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/5s_excitation/piezo_med_ring_sweep(2).wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/5s_excitation/mic_med_ring_sweep(2).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/5s_excitation/piezo_soft_ring_sweep(2).wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/5s_excitation/mic_soft_ring_sweep(2).wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/5s_excitation/piezo_loud_no_ring_sweep(2).wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/5s_excitation/mic_loud_no_ring_sweep(2).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/5s_excitation/piezo_med_no_ring_sweep(2).wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/5s_excitation/mic_med_no_ring_sweep(2).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/5s_excitation/piezo_soft_no_ring_sweep(2).wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/5s_excitation/mic_soft_no_ring_sweep(2).wav"
+                    }
+                }
+            }
+        },
+        "10s_excitation": {
+            "rpms": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/10s_excitation/piezo_loud_ring_rpms(3).wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/10s_excitation/mic_loud_ring_rpms(3).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/10s_excitation/piezo_med_ring_rpms(3).wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/10s_excitation/mic_med_ring_rpms(3).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/10s_excitation/piezo_soft_ring_rpms(3).wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/10s_excitation/mic_soft_ring_rpms(3).wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/10s_excitation/piezo_loud_no_ring_rpms(3).wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/10s_excitation/mic_loud_no_ring_rpms(3).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/10s_excitation/piezo_med_no_ring_rpms(3).wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/10s_excitation/mic_med_no_ring_rpms(3).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/10s_excitation/piezo_soft_no_ring_rpms(3).wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/10s_excitation/mic_soft_no_ring_rpms(3).wav"
+                    }
+                }
+            },
+            "sweep": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/10s_excitation/piezo_loud_ring_sweep(3).wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/10s_excitation/mic_loud_ring_sweep(3).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/10s_excitation/piezo_med_ring_sweep(3).wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/10s_excitation/mic_med_ring_sweep(3).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/10s_excitation/piezo_soft_ring_sweep(3).wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/10s_excitation/mic_soft_ring_sweep(3).wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/10s_excitation/piezo_loud_no_ring_sweep(3).wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/10s_excitation/mic_loud_no_ring_sweep(3).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/10s_excitation/piezo_med_no_ring_sweep(3).wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/10s_excitation/mic_med_no_ring_sweep(3).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Classical_Unknown/10s_excitation/piezo_soft_no_ring_sweep(3).wav",
+                        "mic": "Guitar_Data_REAL/Classical_Unknown/10s_excitation/mic_soft_no_ring_sweep(3).wav"
+                    }
+                }
+            }
+        },
+        "all_frets_finger": {
+            "mic": "Guitar_Data_REAL/Classical_Unknown/all_frets_finger_mic.wav",
+            "piezo": "Guitar_Data_REAL/Classical_Unknown/all_frets_finger_piezo.wav"
+        },
+        "excerpt": {
+            "mic": "Guitar_Data_REAL/Classical_Unknown/excerpt_mic.wav",
+            "piezo": "Guitar_Data_REAL/Classical_Unknown/excerpt_piezo(2).wav"
+        },
+        "open_strings": {
+            "mic": "Guitar_Data_REAL/Classical_Unknown/open_strings_mic.wav",
+            "piezo": "Guitar_Data_REAL/Classical_Unknown/open_strings_piezo.wav"
+        },
+        "played_chords": {
+            "mic": "Guitar_Data_REAL/Classical_Unknown/played_chords_mic.wav",
+            "piezo": "Guitar_Data_REAL/Classical_Unknown/played_chords_piezo.wav"
+        },
+        "played_melody": {
+            "mic": "Guitar_Data_REAL/Classical_Unknown/played_melody_mic.wav",
+            "piezo": "Guitar_Data_REAL/Classical_Unknown/played_melody_piezo.wav"
+        }
+    },
+    "bad_takamine_EG440SC": {
+        "3s_excitation": {
+            "rpms": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/3s_excitation/bad_takamine_piezo_loud_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/3s_excitation/bad_takamine_mic_loud_ring_rpms.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/3s_excitation/bad_takamine_piezo_med_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/3s_excitation/bad_takamine_mic_med_ring_rpms.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/3s_excitation/bad_takamine_piezo_soft_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/3s_excitation/bad_takamine_mic_soft_ring_rpms.wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/3s_excitation/bad_takamine_piezo_loud_no_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/3s_excitation/bad_takamine_mic_loud_no_ring_rpms.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/3s_excitation/bad_takamine_piezo_med_no_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/3s_excitation/bad_takamine_mic_med_no_ring_rpms.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/3s_excitation/bad_takamine_piezo_soft_no_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/3s_excitation/bad_takamine_mic_soft_no_ring_rpms.wav"
+                    }
+                }
+            },
+            "sweep": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/3s_excitation/bad_takamine_piezo_loud_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/3s_excitation/bad_takamine_mic_loud_ring_sweep.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/3s_excitation/bad_takamine_piezo_med_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/3s_excitation/bad_takamine_mic_med_ring_sweep.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/3s_excitation/bad_takamine_piezo_soft_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/3s_excitation/bad_takamine_mic_soft_ring_sweep.wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/3s_excitation/bad_takamine_piezo_loud_no_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/3s_excitation/bad_takamine_mic_loud_no_ring_sweep.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/3s_excitation/bad_takamine_piezo_med_no_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/3s_excitation/bad_takamine_mic_med_no_ring_sweep.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/3s_excitation/bad_takamine_piezo_soft_no_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/3s_excitation/bad_takamine_mic_soft_no_ring_sweep.wav"
+                    }
+                }
+            }
+        },
+        "5s_excitation": {
+            "rpms": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/5s_excitation/bad_takamine_piezo_loud_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/5s_excitation/bad_takamine_mic_loud_ring_rpms.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/5s_excitation/bad_takamine_piezo_med_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/5s_excitation/bad_takamine_mic_med_ring_rpms.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/5s_excitation/bad_takamine_piezo_soft_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/5s_excitation/bad_takamine_mic_soft_ring_rpms.wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/5s_excitation/bad_takamine_piezo_loud_no_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/5s_excitation/bad_takamine_mic_loud_no_ring_rpms.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/5s_excitation/bad_takamine_piezo_med_no_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/5s_excitation/bad_takamine_mic_med_no_ring_rpms.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/5s_excitation/bad_takamine_piezo_soft_no_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/5s_excitation/bad_takamine_mic_soft_no_ring_rpms.wav"
+                    }
+                }
+            },
+            "sweep": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/5s_excitation/bad_takamine_piezo_loud_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/5s_excitation/bad_takamine_mic_loud_ring_sweep.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/5s_excitation/bad_takamine_piezo_med_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/5s_excitation/bad_takamine_mic_med_ring_sweep.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/5s_excitation/bad_takamine_piezo_soft_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/5s_excitation/bad_takamine_mic_soft_ring_sweep.wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/5s_excitation/bad_takamine_piezo_loud_no_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/5s_excitation/bad_takamine_mic_loud_no_ring_sweep.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/5s_excitation/bad_takamine_piezo_med_no_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/5s_excitation/bad_takamine_mic_med_no_ring_sweep.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/5s_excitation/bad_takamine_piezo_soft_no_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/5s_excitation/bad_takamine_mic_soft_no_ring_sweep.wav"
+                    }
+                }
+            }
+        },
+        "10s_excitation": {
+            "rpms": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/10s_excitation/bad_takamine_piezo_loud_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/10s_excitation/bad_takamine_mic_loud_ring_rpms.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/10s_excitation/bad_takamine_piezo_med_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/10s_excitation/bad_takamine_mic_med_ring_rpms.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/10s_excitation/bad_takamine_piezo_soft_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/10s_excitation/bad_takamine_mic_soft_ring_rpms.wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/10s_excitation/bad_takamine_piezo_loud_no_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/10s_excitation/bad_takamine_mic_loud_no_ring_rpms.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/10s_excitation/bad_takamine_piezo_med_no_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/10s_excitation/bad_takamine_mic_med_no_ring_rpms.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/10s_excitation/bad_takamine_piezo_soft_no_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/10s_excitation/bad_takamine_mic_soft_no_ring_rpms.wav"
+                    }
+                }
+            },
+            "sweep": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/10s_excitation/bad_takamine_piezo_loud_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/10s_excitation/bad_takamine_mic_loud_ring_sweep.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/10s_excitation/bad_takamine_piezo_med_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/10s_excitation/bad_takamine_mic_med_ring_sweep.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/10s_excitation/bad_takamine_piezo_soft_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/10s_excitation/bad_takamine_mic_soft_ring_sweep.wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/10s_excitation/bad_takamine_piezo_loud_no_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/10s_excitation/bad_takamine_mic_loud_no_ring_sweep.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/10s_excitation/bad_takamine_piezo_med_no_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/10s_excitation/bad_takamine_mic_med_no_ring_sweep.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/10s_excitation/bad_takamine_piezo_soft_no_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/10s_excitation/bad_takamine_mic_soft_no_ring_sweep.wav"
+                    }
+                }
+            }
+        },
+        "all_frets_finger": {
+            "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/bad_takamine_all_frets_finger_mic.wav",
+            "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/bad_takamine_all_frets_finger_piezo.wav"
+        },
+        "excerpt": {
+            "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/excerpt_mic.wav",
+            "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/excerpt_piezo.wav"
+        },
+        "open_strings": {
+            "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/bad_takamine_open_strings_mic.wav",
+            "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/bad_takamine_open_strings_piezo.wav"
+        },
+        "played_chords": {
+            "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/bad_takamine_played_chords_mic.wav",
+            "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/bad_takamine_played_chords_piezo.wav"
+        },
+        "played_melody": {
+            "mic": "Guitar_Data_REAL/bad_takamine_EG440SC/bad_takamine_played_melody_mic.wav",
+            "piezo": "Guitar_Data_REAL/bad_takamine_EG440SC/bad_takamine_played_melody_piezo.wav"
+        }
+    },
+    "Vi_Yamaha_F335": {
+        "3s_excitation": {
+            "rpms": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/3s_excitation/piezo_loud_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/3s_excitation/mic_loud_ring_rpms.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/3s_excitation/piezo_med_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/3s_excitation/mic_med_ring_rpms.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/3s_excitation/piezo_soft_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/3s_excitation/mic_soft_ring_rpms.wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/3s_excitation/piezo_loud_no_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/3s_excitation/mic_loud_no_ring_rpms.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/3s_excitation/piezo_med_no_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/3s_excitation/mic_med_no_ring_rpms.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/3s_excitation/piezo_soft_no_ring_rpms.wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/3s_excitation/mic_soft_no_ring_rpms.wav"
+                    }
+                }
+            },
+            "sweep": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/3s_excitation/piezo_loud_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/3s_excitation/mic_loud_ring_sweep.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/3s_excitation/piezo_med_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/3s_excitation/mic_med_ring_sweep.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/3s_excitation/piezo_soft_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/3s_excitation/mic_soft_ring_sweep.wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/3s_excitation/piezo_loud_no_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/3s_excitation/mic_loud_no_ring_sweep.wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/3s_excitation/piezo_med_no_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/3s_excitation/mic_med_no_ring_sweep.wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/3s_excitation/piezo_soft_no_ring_sweep.wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/3s_excitation/mic_soft_no_ring_sweep.wav"
+                    }
+                }
+            }
+        },
+        "5s_excitation": {
+            "rpms": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/5s_excitation/piezo_loud_ring_rpms(2).wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/5s_excitation/mic_loud_ring_rpms(2).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/5s_excitation/piezo_med_ring_rpms(2).wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/5s_excitation/mic_med_ring_rpms(2).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/5s_excitation/piezo_soft_ring_rpms(2).wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/5s_excitation/mic_soft_ring_rpms(2).wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/5s_excitation/piezo_loud_no_ring_rpms(2).wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/5s_excitation/mic_loud_no_ring_rpms(2).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/5s_excitation/piezo_med_no_ring_rpms(2).wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/5s_excitation/mic_med_no_ring_rpms(2).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/5s_excitation/piezo_soft_no_ring_rpms(2).wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/5s_excitation/mic_soft_no_ring_rpms(2).wav"
+                    }
+                }
+            },
+            "sweep": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/5s_excitation/piezo_loud_ring_sweep(2).wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/5s_excitation/mic_loud_ring_sweep(2).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/5s_excitation/piezo_med_ring_sweep(2).wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/5s_excitation/mic_med_ring_sweep(2).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/5s_excitation/piezo_soft_ring_sweep(2).wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/5s_excitation/mic_soft_ring_sweep(2).wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/5s_excitation/piezo_loud_no_ring_sweep(2).wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/5s_excitation/mic_loud_no_ring_sweep(2).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/5s_excitation/piezo_med_no_ring_sweep(2).wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/5s_excitation/mic_med_no_ring_sweep(2).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/5s_excitation/piezo_soft_no_ring_sweep(2).wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/5s_excitation/mic_soft_no_ring_sweep(2).wav"
+                    }
+                }
+            }
+        },
+        "10s_excitation": {
+            "rpms": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/10s_excitation/piezo_loud_ring_rpms(3).wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/10s_excitation/mic_loud_ring_rpms(3).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/10s_excitation/piezo_med_ring_rpms(3).wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/10s_excitation/mic_med_ring_rpms(3).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/10s_excitation/piezo_soft_ring_rpms(3).wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/10s_excitation/mic_soft_ring_rpms(3).wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/10s_excitation/piezo_loud_no_ring_rpms(3).wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/10s_excitation/mic_loud_no_ring_rpms(3).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/10s_excitation/piezo_med_no_ring_rpms(3).wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/10s_excitation/mic_med_no_ring_rpms(3).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/10s_excitation/piezo_soft_no_ring_rpms(3).wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/10s_excitation/mic_soft_no_ring_rpms(3).wav"
+                    }
+                }
+            },
+            "sweep": {
+                "ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/10s_excitation/piezo_loud_ring_sweep(3).wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/10s_excitation/mic_loud_ring_sweep(3).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/10s_excitation/piezo_med_ring_sweep(3).wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/10s_excitation/mic_med_ring_sweep(3).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/10s_excitation/piezo_soft_ring_sweep(3).wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/10s_excitation/mic_soft_ring_sweep(3).wav"
+                    }
+                },
+                "no_ring": {
+                    "loud": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/10s_excitation/piezo_loud_no_ring_sweep(3).wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/10s_excitation/mic_loud_no_ring_sweep(3).wav"
+                    },
+                    "med": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/10s_excitation/piezo_med_no_ring_sweep(3).wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/10s_excitation/mic_med_no_ring_sweep(3).wav"
+                    },
+                    "soft": {
+                        "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/10s_excitation/piezo_soft_no_ring_sweep(3).wav",
+                        "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/10s_excitation/mic_soft_no_ring_sweep(3).wav"
+                    }
+                }
+            }
+        },
+        "all_frets_finger": {
+            "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/all_frets_finger_mic.wav",
+            "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/all_frets_finger_piezo.wav"
+        },
+        "excerpt": {
+            "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/excerpt_mic.wav",
+            "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/excerpt_piezo.wav"
+        },
+        "open_strings": {
+            "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/open_strings_mic.wav",
+            "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/open_strings_piezo.wav"
+        },
+        "played_chords": {
+            "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/played_chords_mic.wav",
+            "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/played_chords_piezo.wav"
+        },
+        "played_melody": {
+            "mic": "Guitar_Data_REAL/Vi_Yamaha_F335/played_melody_mic.wav",
+            "piezo": "Guitar_Data_REAL/Vi_Yamaha_F335/played_melody_piezo.wav"
+        }
+    }
+}

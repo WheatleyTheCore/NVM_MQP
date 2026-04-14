@@ -18,35 +18,21 @@ def generate_log_sweep(duration, sr=44100, filename="log_sweep.wav"):
 
 def generate_pink_RPMS(duration, sr=44100, filename="pink_rpms.wav"):
 
-    # Generate white noise
-    white_noise = np.random.randn(duration * sr)
-    
-    # Compute FFT of white noise
-    white_fft = np.fft.rfft(white_noise)
-    
-    # Compute frequency bins
-    freqs = np.fft.rfftfreq(duration * sr, d=1/sr)
-    
-    # Compute scaling factors for each frequency bin to create pink noise
-    scale = np.zeros_like(freqs)
-    scale[1:] = 1 / np.sqrt(freqs[1:])  # Exclude DC component
-    
-    # Apply scaling to FFT of white noise
-    pink_fft = white_fft * scale
-    
-    # Inverse FFT to obtain pink noise
-    pink_noise = np.fft.irfft(pink_fft)
-    
-    # Normalize to 16-bit range
-    pink_noise *= 32767 / np.max(np.abs(pink_noise))
+    N = duration * sr
+    phases = np.random.uniform(0, 2*np.pi, N - 1)
+    X = np.zeros(N, dtype=complex)
 
-    pink_noise = pink_noise.astype(np.int16)
+    X[0] = 0
 
-    print(pink_noise.dtype)
+    freqs = np.arange(1, N)
+    amplitude = 1 / np.sqrt(freqs)  # pink noise
+    X[1:N] = np.exp(1j * phases) * amplitude
 
-    write(filename, sr, pink_noise)
+    x = np.fft.ifft(X).real
+
+    write(filename, sr, x)
     
-    return pink_noise
+    return x
 
 def generate_pink_noise(n_samples, sample_rate):
     # Generate white noise

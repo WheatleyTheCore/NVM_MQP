@@ -1,0 +1,8 @@
+dtw_python==1.7.4
+librosa==0.11.0
+matplotlib==3.10.8
+noisereduce==3.0.3
+numpy==2.4.4
+pandas==3.0.2
+scipy==1.17.1
+tqdm==4.67.3
