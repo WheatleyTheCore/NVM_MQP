@@ -12,6 +12,7 @@ from tqdm import tqdm
 from lib.ip import *
 from lib.load_audio_files import get_audio_files
 from lib.metrics import *
+from lib.optimize import *
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Inverse problem solving for inside-out guitars")
@@ -33,7 +34,7 @@ if __name__ == "__main__":
 
     guitars = guitar_data.keys()
 
-    df = pd.DataFrame(columns=['IR', "guitar_mapping", "mic_mapping", "excitation_type", "excitation_length", "has_ring", "volume", "Inverse_Filtering_Similarity_Melody", "Inverse_Filtering_Correlation_Melody", "Weiner_Similarity_Melody", "Weiner_Correlation_Melody", "ACDW_Similarity_Melody", "ACDW_Correlation_Melody", "Inverse_Filtering_Similarity_Chords", "Inverse_Filtering_Correlation_Chords", "Weiner_Similarity_Chords", "Weiner_Correlation_Chords", "ACDW_Similarity_Chords", "ACDW_Correlation_Chords"])
+    df = pd.DataFrame(columns=['IR', "guitar_mapping", "mic_mapping", "excitation_type", "excitation_length", "has_ring", "volume", "if_params", "weiner_params", "acdw_params", "Inverse_Filtering_Similarity_Melody", "Inverse_Filtering_Correlation_Melody", "Weiner_Similarity_Melody", "Weiner_Correlation_Melody", "ACDW_Similarity_Melody", "ACDW_Correlation_Melody", "Inverse_Filtering_Similarity_Chords", "Inverse_Filtering_Correlation_Chords", "Weiner_Similarity_Chords", "Weiner_Correlation_Chords", "ACDW_Similarity_Chords", "ACDW_Correlation_Chords"])
     df_i = 0 # to keep track of what row to add our stuff to
 
     for source_guitar in tqdm(guitars):
@@ -89,15 +90,20 @@ if __name__ == "__main__":
                             source_types = {'mic': source_signal_mic, 'piezo': source_signal_piezo}
                             target_types = {'mic': target_signal_mic, 'piezo': target_signal_piezo}
 
+                            top_cut_window_values = np.arange(0, 400, 10)
+                            ir_len_values = lambda length: [length//x for x in np.arange(1, 7, 1)] # length//x for x in [1...10]
+                            SNR_values = np.arange(2, 40, 2)
+                            acdw_window_end = np.arange(400, 200, -50)
+
 
                             def compute_ir_with_data(mapping):
 
                                 source_type = mapping[0]
                                 target_type = mapping[1]
 
-                                ir_inverse_filtering = inverse_filter(source_types[source_type], target_types[target_type])
-                                ir_weiner = wiener_deconv(source_types[source_type], target_types[target_type])
-                                ir_acdw = ACDW(source_types[source_type], target_types[target_type])
+                                ir_inverse_filtering, _, params_if = get_best_inverse_filter(source_types[source_type], target_types[target_type], source_melodies[source_type], target_melodies[target_type])
+                                ir_weiner, _, params_weiner = get_best_weiner(source_types[source_type], target_types[target_type], SNR_values, top_cut_window_values, source_melodies[source_type], target_melodies[target_type])
+                                ir_acdw, _, params_acdw = get_best_acdw(source_types[source_type], target_types[target_type], source_melodies[source_type], target_melodies[target_type])
 
                                 wavfile.write(str(ir_dir) + f"/{source_type}_to_{target_type}_inverse_ir.wav", 44100, ir_inverse_filtering)
                                 wavfile.write(str(ir_dir) + f"/{source_type}_to_{target_type}_weiner_ir.wav", 44100, ir_weiner)
@@ -127,7 +133,7 @@ if __name__ == "__main__":
                                 melody_correlation_acdw = basic_correlation(generated_melody_acdw[:44100*2], target_melodies[target_type][:44100*2])
                                 
                                 chord_correlation_inverse_filtering = chord_correlation_weiner = chord_correlation_acdw = melody_correlation_inverse_filtering = melody_correlation_weiner = melody_correlation_acdw = None
-                                return [f'{source_guitar}_{source_type}_to_{target_guitar}_{target_type}', f'{source_guitar}_to_{target_guitar}', f'{source_type}_to_{target_type}', excitation_type, excitation_len, variant, volume] + [melody_similarity_inverse_filtering, melody_correlation_inverse_filtering, melody_similarity_weiner, melody_correlation_weiner, melody_similarity_acdw, melody_correlation_acdw, chord_similarity_inverse_filtering, chord_correlation_inverse_filtering, chord_similarity_weiner, chord_correlation_weiner, chord_similarity_acdw, chord_correlation_acdw]
+                                return [f'{source_guitar}_{source_type}_to_{target_guitar}_{target_type}', f'{source_guitar}_to_{target_guitar}', f'{source_type}_to_{target_type}', excitation_type, excitation_len, variant, volume] + [params_if, params_weiner, params_acdw, melody_similarity_inverse_filtering, melody_correlation_inverse_filtering, melody_similarity_weiner, melody_correlation_weiner, melody_similarity_acdw, melody_correlation_acdw, chord_similarity_inverse_filtering, chord_correlation_inverse_filtering, chord_similarity_weiner, chord_correlation_weiner, chord_similarity_acdw, chord_correlation_acdw]
 
                             with Pool(processes=4) as pool:
                                 results = pool.map(compute_ir_with_data, jobs)
@@ -136,57 +142,57 @@ if __name__ == "__main__":
                                     df_i = df_i + 1
             
             # TODO: copy/pasted code below, should really be fixed....
-            source_rate_mic, source_signal_mic  = wavfile.read("./" + str(guitar_data[source_guitar]['all_frets_finger']['mic']))
-            source_rate_piezo, source_signal_piezo = wavfile.read(guitar_data[source_guitar]['all_frets_finger']['piezo'])
-            target_rate_mic, target_signal_mic = wavfile.read(guitar_data[target_guitar]['all_frets_finger']['mic'])
-            target_rate_piezo, target_signal_piezo = wavfile.read(guitar_data[target_guitar]['all_frets_finger']['piezo'])
-            source_types = {'mic': source_signal_mic, 'piezo': source_signal_piezo}
-            target_types = {'mic': target_signal_mic, 'piezo': target_signal_piezo}
+            # source_rate_mic, source_signal_mic  = wavfile.read("./" + str(guitar_data[source_guitar]['all_frets_finger']['mic']))
+            # source_rate_piezo, source_signal_piezo = wavfile.read(guitar_data[source_guitar]['all_frets_finger']['piezo'])
+            # target_rate_mic, target_signal_mic = wavfile.read(guitar_data[target_guitar]['all_frets_finger']['mic'])
+            # target_rate_piezo, target_signal_piezo = wavfile.read(guitar_data[target_guitar]['all_frets_finger']['piezo'])
+            # source_types = {'mic': source_signal_mic, 'piezo': source_signal_piezo}
+            # target_types = {'mic': target_signal_mic, 'piezo': target_signal_piezo}
 
-            def compute_ir_with_data(mapping):
+            # def compute_ir_with_data(mapping):
 
-                source_type = mapping[0]
-                target_type = mapping[1]
+            #     source_type = mapping[0]
+            #     target_type = mapping[1]
 
-                ir_inverse_filtering = inverse_filter(source_types[source_type], target_types[target_type])
-                ir_weiner = wiener_deconv(source_types[source_type], target_types[target_type])
-                ir_acdw = ACDW(source_types[source_type], target_types[target_type])
+            #     ir_inverse_filtering = inverse_filter(source_types[source_type], target_types[target_type])
+            #     ir_weiner = wiener_deconv(source_types[source_type], target_types[target_type])
+            #     ir_acdw = ACDW(source_types[source_type], target_types[target_type])
 
-                wavfile.write(str(ir_dir) + f"/{source_type}_to_{target_type}_inverse_ir.wav", 44100, ir_inverse_filtering)
-                wavfile.write(str(ir_dir) + f"/{source_type}_to_{target_type}_weiner_ir.wav", 44100, ir_weiner)
-                wavfile.write(str(ir_dir) + f"/{source_type}_to_{target_type}_acdw_ir.wav", 44100, ir_acdw)
+            #     wavfile.write(str(ir_dir) + f"/{source_type}_to_{target_type}_inverse_ir.wav", 44100, ir_inverse_filtering)
+            #     wavfile.write(str(ir_dir) + f"/{source_type}_to_{target_type}_weiner_ir.wav", 44100, ir_weiner)
+            #     wavfile.write(str(ir_dir) + f"/{source_type}_to_{target_type}_acdw_ir.wav", 44100, ir_acdw)
 
 
-                generated_chord_inverse_filtering = signal.fftconvolve(source_chords[source_type], ir_inverse_filtering)
-                generated_chord_weiner = signal.fftconvolve(source_chords[source_type], ir_weiner)
-                generated_chord_acdw = signal.fftconvolve(source_chords[source_type], ir_acdw)
+            #     generated_chord_inverse_filtering = signal.fftconvolve(source_chords[source_type], ir_inverse_filtering)
+            #     generated_chord_weiner = signal.fftconvolve(source_chords[source_type], ir_weiner)
+            #     generated_chord_acdw = signal.fftconvolve(source_chords[source_type], ir_acdw)
 
-                chord_similarity_inverse_filtering = compute_MFCC_similarity(generated_chord_inverse_filtering, target_chords[target_type])
-                chord_similarity_weiner = compute_MFCC_similarity(generated_chord_weiner, target_chords[target_type])
-                chord_similarity_acdw = compute_MFCC_similarity(generated_chord_acdw, target_chords[target_type])
-                chord_correlation_inverse_filtering = basic_correlation(generated_chord_inverse_filtering[:44100*2], target_chords[target_type[:44100*2]])
-                chord_correlation_weiner = basic_correlation(generated_chord_weiner[:44100*2], target_chords[target_type[:44100*2]])
-                chord_correlation_acdw = basic_correlation(generated_chord_acdw[:44100*2], target_chords[target_type[:44100*2]])
+            #     chord_similarity_inverse_filtering = compute_MFCC_similarity(generated_chord_inverse_filtering, target_chords[target_type])
+            #     chord_similarity_weiner = compute_MFCC_similarity(generated_chord_weiner, target_chords[target_type])
+            #     chord_similarity_acdw = compute_MFCC_similarity(generated_chord_acdw, target_chords[target_type])
+            #     chord_correlation_inverse_filtering = basic_correlation(generated_chord_inverse_filtering[:44100*2], target_chords[target_type[:44100*2]])
+            #     chord_correlation_weiner = basic_correlation(generated_chord_weiner[:44100*2], target_chords[target_type[:44100*2]])
+            #     chord_correlation_acdw = basic_correlation(generated_chord_acdw[:44100*2], target_chords[target_type[:44100*2]])
 
-                generated_melody_inverse_filtering = signal.fftconvolve(source_melodies[source_type], ir_inverse_filtering)
-                generated_melody_weiner = signal.fftconvolve(source_melodies[source_type], ir_weiner)
-                generated_melody_acdw = signal.fftconvolve(source_melodies[source_type], ir_acdw)
+            #     generated_melody_inverse_filtering = signal.fftconvolve(source_melodies[source_type], ir_inverse_filtering)
+            #     generated_melody_weiner = signal.fftconvolve(source_melodies[source_type], ir_weiner)
+            #     generated_melody_acdw = signal.fftconvolve(source_melodies[source_type], ir_acdw)
 
-                melody_similarity_inverse_filtering = compute_MFCC_similarity(generated_melody_inverse_filtering, target_melodies[target_type])
-                melody_similarity_weiner = compute_MFCC_similarity(generated_melody_weiner, target_melodies[target_type])
-                melody_similarity_acdw = compute_MFCC_similarity(generated_melody_acdw, target_melodies[target_type])
-                melody_correlation_inverse_filtering = basic_correlation(generated_melody_inverse_filtering[:44100*2], target_melodies[target_type][:44100*2])
-                melody_correlation_weiner = basic_correlation(generated_melody_weiner[:44100*2], target_melodies[target_type][:44100*2])
-                melody_correlation_acdw = basic_correlation(generated_melody_acdw[:44100*2], target_melodies[target_type][:44100*2])
+            #     melody_similarity_inverse_filtering = compute_MFCC_similarity(generated_melody_inverse_filtering, target_melodies[target_type])
+            #     melody_similarity_weiner = compute_MFCC_similarity(generated_melody_weiner, target_melodies[target_type])
+            #     melody_similarity_acdw = compute_MFCC_similarity(generated_melody_acdw, target_melodies[target_type])
+            #     melody_correlation_inverse_filtering = basic_correlation(generated_melody_inverse_filtering[:44100*2], target_melodies[target_type][:44100*2])
+            #     melody_correlation_weiner = basic_correlation(generated_melody_weiner[:44100*2], target_melodies[target_type][:44100*2])
+            #     melody_correlation_acdw = basic_correlation(generated_melody_acdw[:44100*2], target_melodies[target_type][:44100*2])
                 
-                chord_correlation_inverse_filtering = chord_correlation_weiner = chord_correlation_acdw = melody_correlation_inverse_filtering = melody_correlation_weiner = melody_correlation_acdw = None
-                return [f'{source_guitar}_{source_type}_to_{target_guitar}_{target_type}_all_frets', f'{source_guitar}_to_{target_guitar}', f'{source_type}_to_{target_type}', "'all_frets", None, None, None] + [melody_similarity_inverse_filtering, melody_correlation_inverse_filtering, melody_similarity_weiner, melody_correlation_weiner, melody_similarity_acdw, melody_correlation_acdw, chord_similarity_inverse_filtering, chord_correlation_inverse_filtering, chord_similarity_weiner, chord_correlation_weiner, chord_similarity_acdw, chord_correlation_acdw]
+            #     chord_correlation_inverse_filtering = chord_correlation_weiner = chord_correlation_acdw = melody_correlation_inverse_filtering = melody_correlation_weiner = melody_correlation_acdw = None
+            #     return [f'{source_guitar}_{source_type}_to_{target_guitar}_{target_type}_all_frets', f'{source_guitar}_to_{target_guitar}', f'{source_type}_to_{target_type}', "'all_frets", None, None, None] + [melody_similarity_inverse_filtering, melody_correlation_inverse_filtering, melody_similarity_weiner, melody_correlation_weiner, melody_similarity_acdw, melody_correlation_acdw, chord_similarity_inverse_filtering, chord_correlation_inverse_filtering, chord_similarity_weiner, chord_correlation_weiner, chord_similarity_acdw, chord_correlation_acdw]
 
-            with Pool(processes=4) as pool:
-                results = pool.map(compute_ir_with_data, jobs)
-                for result in results:
-                    df.loc[df_i] = result
-                    df_i = df_i + 1
+            # with Pool(processes=4) as pool:
+            #     results = pool.map(compute_ir_with_data, jobs)
+            #     for result in results:
+            #         df.loc[df_i] = result
+            #         df_i = df_i + 1
     df.to_csv('results.csv')
 
 
