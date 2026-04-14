@@ -9,7 +9,7 @@
 
 # Load Python environment
 module load python/3.x
-source /path/to/your/venv/bin/activate
+source /venv/bin/activate
 
 # Execute script
-python myscript.py --input data.csv
+python main.py
