@@ -5,6 +5,7 @@ import argparse
 from pathlib import Path
 from scipy import signal
 import pandas as pd
+import time
 
 from multiprocessing import Pool
 from tqdm import tqdm
@@ -13,6 +14,9 @@ from lib.ip import *
 from lib.load_audio_files import get_audio_files
 from lib.metrics import *
 from lib.optimize import *
+
+import warnings
+warnings.filterwarnings("ignore") # overkill to ignore the warnings from lib
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Inverse problem solving for inside-out guitars")
@@ -32,7 +36,13 @@ if __name__ == "__main__":
         'variants': ['ring', 'no_ring']
     }
 
-    guitars = guitar_data.keys()
+    guitars = list(guitar_data.keys())
+    print(guitars)
+    for i in ['bad_takamine_EG440SC', "Vi_Yamaha_F335", "Classical_Unknown"]:
+        print(i)
+        guitars.remove(i) # bc of time crunch for poster, to be removed.
+
+    print(guitars)
 
     df = pd.DataFrame(columns=['IR', "guitar_mapping", "mic_mapping", "excitation_type", "excitation_length", "has_ring", "volume", "if_params", "weiner_params", "acdw_params", "Inverse_Filtering_Similarity_Melody", "Inverse_Filtering_Correlation_Melody", "Weiner_Similarity_Melody", "Weiner_Correlation_Melody", "ACDW_Similarity_Melody", "ACDW_Correlation_Melody", "Inverse_Filtering_Similarity_Chords", "Inverse_Filtering_Correlation_Chords", "Weiner_Similarity_Chords", "Weiner_Correlation_Chords", "ACDW_Similarity_Chords", "ACDW_Correlation_Chords"])
     df_i = 0 # to keep track of what row to add our stuff to
@@ -58,7 +68,7 @@ if __name__ == "__main__":
             target_melodies = {'mic': target_melody_mic, 'piezo': target_melody_piezo}
             target_chords = {'mic': target_chords_mic, 'piezo': target_chords_piezo}
 
-            jobs = [['mic', 'mic'], ['piezo', 'mic'], ['piezo', 'piezo']]
+            jobs = [['mic', 'mic'], ['piezo', 'mic']]
 
 
             # TODO: test piezo-mic, piezo-piezo, mic-mic, and also all_frets to all_frets, open_strings to open_strings
@@ -68,7 +78,7 @@ if __name__ == "__main__":
                 for excitation_type in data_conf['excitation_types']:
                     for variant in data_conf['variants']:
                         for volume in data_conf['volumes']:
-                            ir_dir = Path(f'./irs//{source_guitar}_to_{target_guitar}/{excitation_len}/{excitation_type}/{variant}/{volume}')
+                            ir_dir = Path(f'./irs/{source_guitar}_to_{target_guitar}/{excitation_len}/{excitation_type}/{variant}/{volume}')
                             ir_dir.mkdir(parents=True, exist_ok=True) 
 
                             # load data
@@ -90,9 +100,9 @@ if __name__ == "__main__":
                             source_types = {'mic': source_signal_mic, 'piezo': source_signal_piezo}
                             target_types = {'mic': target_signal_mic, 'piezo': target_signal_piezo}
 
-                            top_cut_window_values = np.arange(0, 400, 10)
-                            ir_len_values = lambda length: [length//x for x in np.arange(1, 7, 1)] # length//x for x in [1...10]
-                            SNR_values = np.arange(2, 40, 2)
+                            top_cut_window_values = np.arange(0, 400, 100)
+                            ir_len_values = lambda length: [length//x for x in np.arange(1, 7, 2)] # length//x for x in [1...10]
+                            SNR_values = np.arange(2, 40, 10)
                             acdw_window_end = np.arange(400, 200, -50)
 
 
@@ -193,7 +203,7 @@ if __name__ == "__main__":
             #     for result in results:
             #         df.loc[df_i] = result
             #         df_i = df_i + 1
-    df.to_csv('results.csv')
+    df.to_csv(f'results_{int(time.time())}.csv')
 
 
 

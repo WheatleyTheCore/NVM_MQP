@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from scipy.io import wavfile
 
 
-def removeSilenceAligned(signal_1, signal_2, threshold = 0.005, window_size=5, stride=2, buffer = 100):
+def removeSilenceAligned(signal_1, signal_2, threshold = 0.003, window_size=5, stride=2, buffer = 200):
     """
     returns signal 1 and signal 2 with silence removed, 
     but with the two signals still aligned.
@@ -15,6 +15,10 @@ def removeSilenceAligned(signal_1, signal_2, threshold = 0.005, window_size=5, s
     should find the start and end indicies with meaningful data.
     """
     assert len(signal_1) == len(signal_2), "signals must be the same length"
+    
+    original_signal_1 = signal_1
+    original_signal_2 = signal_2
+
     signal_length = len(signal_1)
 
     start_of_data = None
@@ -38,6 +42,9 @@ def removeSilenceAligned(signal_1, signal_2, threshold = 0.005, window_size=5, s
             end_of_data = i+window_size + buffer
             break
 
+    if (len(signal_1) < 1000 or len(signal_2) < 1000):
+        return (original_signal_1, original_signal_2)
+
     return (signal_1[start_of_data:end_of_data], signal_2[start_of_data:end_of_data])
 
 def inverse_filter(x, y, ir_len=44100//2):
@@ -51,9 +58,13 @@ def inverse_filter(x, y, ir_len=44100//2):
     much as possible
     """
 
-    assert len(x) == len(y), "x and y must be the same length"
+    
 
     x, y = removeSilenceAligned(x, y)
+
+    assert len(x) == len(y), "x and y must be the same length"
+    if (len(x) < 400):
+        return np.array([1, 0, 0]) # return identity, should have some better way of failing safe.
 
     x_fft = fft(x)
     y_fft = fft(y)
@@ -75,6 +86,10 @@ def wiener_deconv(x, y, ir_len=44100//2, window_cut=0, snr=20):
     assert len(x) == len(y), "x and y must be the same length"
 
     x, y = removeSilenceAligned(x, y)
+
+    assert len(x) == len(y), "x and y must be the same length"
+    if (len(x) < 400):
+        return np.array([1, 0, 0]) # return identity, should have some better way of failing safe.
 
     y_fft = fft(y)  #b as per https://stanford.edu/class/ee367/reading/lecture6_notes.pdf
     x_fft = fft(x)   # c as per https://stanford.edu/class/ee367/reading/lecture6_notes.pdf
@@ -102,6 +117,10 @@ def ACDW(x, y, ir_len=44100//2, window_end=None, window_start=0):
     assert len(x) == len(y), "x and y must be the same length"
 
     x, y = removeSilenceAligned(x, y)
+
+    assert len(x) == len(y), "x and y must be the same length"
+    if (len(x) < 400):
+        return np.array([1, 0, 0]) # return identity, should have some better way of failing safe.
 
     if window_end is None:
         window_end = len(x)

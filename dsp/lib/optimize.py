@@ -34,7 +34,7 @@ def get_best_inverse_filter(x, y, audition_sig, reference_sig, max_strikes=3):
             strikes = strikes + 1
             if strikes >= max_strikes:
                 break
-    return best_ir, best_performance, {'ir_length': best_length}
+    return (best_ir, best_performance, {'ir_length': best_length})
 
 def get_best_weiner(x, y, snr_vals, window_cut_vals, audition_sig, reference_sig, max_strikes=3):
     """
@@ -83,7 +83,7 @@ def get_best_weiner(x, y, snr_vals, window_cut_vals, audition_sig, reference_sig
     
     
 
-    return best_ir, best_performance, {'ir_length': best_ir_length, 'snr': best_snr, 'window_cut': best_window_cut}
+    return (best_ir, best_performance, {'ir_length': best_ir_length, 'snr': best_snr, 'window_cut': best_window_cut})
 
 def get_best_acdw(x, y, audition_sig, reference_sig, max_strikes=3):
     assert len(x) == len(y), "both signals need to have the same length"
@@ -123,4 +123,4 @@ def get_best_acdw(x, y, audition_sig, reference_sig, max_strikes=3):
                 break
     
 
-    return best_ir, best_performance, {'ir_length': best_ir_length, 'window_end': best_window_end}
+    return (best_ir, best_performance, {'ir_length': best_ir_length, 'window_end': best_window_end})
