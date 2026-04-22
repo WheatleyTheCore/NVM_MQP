@@ -4,6 +4,7 @@ from scipy.fft import fft, ifft
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.io import wavfile
+import librosa
 
 
 def removeSilenceAligned(signal_1, signal_2, threshold = 0.003, window_size=5, stride=2, buffer = 200):
@@ -47,7 +48,7 @@ def removeSilenceAligned(signal_1, signal_2, threshold = 0.003, window_size=5, s
 
     return (signal_1[start_of_data:end_of_data], signal_2[start_of_data:end_of_data])
 
-def inverse_filter(x, y, ir_len=44100//2):
+def inverse_filter(x, y, ir_len=44100//6):
     """
     Naiive inverse filtering. has tunable parameter ir_len, 
     which should be optimized for best performance.
@@ -73,9 +74,10 @@ def inverse_filter(x, y, ir_len=44100//2):
 
     ir = ifft(H).real[:ir_len]
 
-    return ir
+    return ir / np.max(np.abs(ir))
 
-def wiener_deconv(x, y, ir_len=44100//2, window_cut=0, snr=20):
+
+def wiener_deconv(x, y, ir_len=44100//6, window_cut=0, snr=40):
     """
     wiener filtering as per https://stanford.edu/class/ee367/reading/lecture6_notes.pdf.
     
@@ -94,19 +96,21 @@ def wiener_deconv(x, y, ir_len=44100//2, window_cut=0, snr=20):
     y_fft = fft(y)  #b as per https://stanford.edu/class/ee367/reading/lecture6_notes.pdf
     x_fft = fft(x)   # c as per https://stanford.edu/class/ee367/reading/lecture6_notes.pdf
 
-    noise_fft = (np.abs(x_fft)**2)/((np.abs(x_fft)**2) + (1/(snr + 1e-10)))
+    noise_fft = (np.abs(x_fft.real)**2)/((np.abs(x_fft.real)**2) + (1/(snr + 1e-10)))
     ir = y_fft/x_fft 
     ir = ir
     
     H = noise_fft * ir
     H = H[:len(H) - window_cut - 10]
     ir = ifft(H).real
+    ir =  ir / np.max(np.abs(ir))
     if len(ir) > ir_len:
         ir = ir[:ir_len]
-    return ir
+    return ir 
 
 
-def ACDW(x, y, ir_len=44100//2, window_end=None, window_start=0):
+
+def ACDW(x, y, ir_len=44100//6, window_end=None, window_start=0):
     """
     adaptive_cepstral_domain_windowing as per
     https://link.springer.com/chapter/10.1007/978-981-13-1165-9_5
@@ -139,5 +143,39 @@ def ACDW(x, y, ir_len=44100//2, window_end=None, window_start=0):
 
     ir_FFT = fft(c_ir_windowed)
     ir = ifft(np.power(10, ir_FFT)).real[:ir_len]
+
+    return ir / np.max(np.abs(ir))
+
+
+def ACDW_mel(x, y, ir_len=44100//6, window_end=None, window_start=0):
+    """
+    adaptive_cepstral_domain_windowing as per
+    https://link.springer.com/chapter/10.1007/978-981-13-1165-9_5
+
+    note: mfcc might be another angle for this
+    """
+
+    assert len(x) == len(y), "x and y must be the same length"
+
+    x, y = removeSilenceAligned(x, y)
+
+    # normalize signals
+    x = x / np.linalg.norm(x)
+    y = y / np.linalg.norm(y)
+
+    # first generate MFCC
+    mfcc_x = librosa.feature.mfcc(y=x, sr=44100)[2:13] # TODO: this assumes sr=44100
+    mfcc_y = librosa.feature.mfcc(y=y, sr=44100)[2:13]
+
+    assert len(x) == len(y), "x and y must be the same length"
+    if (len(x) < 400):
+        return np.array([1, 0, 0]) # return identity, should have some better way of failing safe.
+
+    if window_end is None:
+        window_end = len(x)
+
+    mfcc_ir = mfcc_y - mfcc_x
+
+    ir = librosa.feature.inverse.mfcc_to_audio(mfcc_ir)[:ir_len]
 
     return ir / np.max(np.abs(ir))

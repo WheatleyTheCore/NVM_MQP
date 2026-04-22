@@ -6,6 +6,7 @@ from pathlib import Path
 from scipy import signal
 import pandas as pd
 import sys
+import numpy as np
 
 from lib.load_audio_files import *
 
@@ -36,13 +37,18 @@ if __name__ == "__main__":
     target_rate, target_audio = wavfile.read("./" + str(guitar_data[args.target][args.audition][args.convert_to]))
 
     ir_rate, ir_data = wavfile.read(f'./irs/{args.source}_to_{args.target}/{args.excitation_length}/{args.excitation}/{args.ring}/{args.volume}/{args.convert_from}_to_{args.convert_to}_{args.ir}_ir.wav')
-    generated_signal = signal.convolve(src_audio, ir_data[:44100//2])
+    ir_data = ir_data / np.max(np.abs(ir_data))
+    src_audio = src_audio / np.max(np.abs(src_audio))
 
-    print(generated_signal.dtype)
+    print(f'ir len: {len(ir_data)}')
+
+    generated_signal = signal.fftconvolve(src_audio, ir_data)
+    generated_signal = generated_signal / np.max(np.abs(generated_signal))
+
 
     wavfile.write('output/unprocessed_input.wav', 44100, src_audio)
     wavfile.write('output/reference_output.wav', 44100, target_audio)
-    wavfile.write('output/generated_output.wav', 44100, generated_signal)
+    wavfile.write('output/generated_output.wav', 44100, generated_signal.astype(np.float32))
 
     # p = pyaudio.PyAudio()
 
